@@ -11,5 +11,5 @@ Other peculiarities of this language are ***portability*** and ***coherence***, 
 
 ### D.R.Y. (Don't Repeat Yourself)
 
-Duplicating some parts of code is an extremely bad practice.
+>Duplicating some parts of code is an extremely bad practice.
 It causes the code to become hardly readable, redundant and difficult to maintain.

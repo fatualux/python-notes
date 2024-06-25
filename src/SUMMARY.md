@@ -11,6 +11,6 @@
 
 # Code organization
 - [Packages](./packages.md)
-- [Scopes](./scopes.md)
 - [Names](./names.md)
 - [Namespaces](./namespaces.md)
+- [Scopes](./scopes.md)
