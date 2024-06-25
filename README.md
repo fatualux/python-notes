@@ -1,6 +1,6 @@
-# Notes about IT
+# Notes about Python
 
-### This is my seconddigital book, generated with mdBook, a command line tool to create books with Markdown.
+### This is my second digital book, generated with mdBook, a command line tool to create books with Markdown.
 
 ## INSTALLATION
 
@@ -9,7 +9,7 @@
 ## USAGE
 
 ```
-git clone https://gitlab.com/fatualux/it-notes && cd it-notes
+git clone https://gitlab.com/fatualux/python-notes && cd python-notes
 mdbook serve
 ```
 
