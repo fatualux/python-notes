@@ -4,6 +4,8 @@ A **namespace** is a system that ensures the unique identification of the names 
 
 It's like a container that holds a set of identifiers (names) and their associated objects.
 
+![namespaces.png](../static/images/code_02.png)
+
 There are different types of namespaces in Python:
 
 - **Local namespace**: the scope of a function, containing names defined within that function.

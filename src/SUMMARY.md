@@ -1,18 +1,18 @@
 # Summary
 
 # Introduction
-- [Overview](./overview.md)
+- [Overview](./chapters/overview.md)
 
 # Basic Principles
-- [Principles](./principles.md)
+- [Principles](./chapters/principles.md)
 
 # Libraries
-- [Libraries](./libraries.md)
+- [Libraries](./chapters/libraries.md)
 
 # Code organization
-- [Packages](./packages.md)
-- [Names](./names.md)
-- [Namespaces](./namespaces.md)
-- [Scopes](./scopes.md)
-- [Objects](./objects.md)
-- [Classes](./classes.md)
+- [Packages](./chapters/packages.md)
+- [Names](./chapters/names.md)
+- [Namespaces](./chapters/namespaces.md)
+- [Scopes](./chapters/scopes.md)
+- [Objects](./chapters/objects.md)
+- [Classes](./chapters/classes.md)

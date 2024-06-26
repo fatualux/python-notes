@@ -9,6 +9,8 @@ Other peculiarities of this language are ***portability*** and ***coherence***, 
 
 ## Basic rules and conventioms
 
+![book_02](../static/images/book_02.png)
+
 ### D.R.Y. (Don't Repeat Yourself)
 
 >Duplicating some parts of code is an extremely bad practice.

@@ -4,6 +4,8 @@ A **scope** is the <ins>textual region</ins> of a Python program, where a namesp
 
 In other words, a scope is a block of code where a particular variable can be accessed or modified.
 
+![scope](../static/images/code_03.png)
+
 ## The LEGB Rule
 
 Python uses the **LEGB** rule to define the scope of variables.
