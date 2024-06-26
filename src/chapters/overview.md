@@ -4,7 +4,7 @@ These are some notes I have been taking during my Python programming code learni
 
 _____
 
-[![Python 02](../static/images/python_02.png)
+![Python 02](../static/images/python_02.png)
 
 _____
 
