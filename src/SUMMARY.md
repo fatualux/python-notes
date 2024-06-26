@@ -14,3 +14,5 @@
 - [Names](./names.md)
 - [Namespaces](./namespaces.md)
 - [Scopes](./scopes.md)
+- [Objects](./objects.md)
+- [Classes](./classes.md)
