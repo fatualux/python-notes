@@ -1,12 +1,4 @@
-# Scopes
-
-A **scope** is the <ins>textual region</ins> of a Python program, where a namespace is directly accessible.
-
-In other words, a scope is a block of code where a particular variable can be accessed or modified.
-
-![scope](../static/images/code_03.png)
-
-## The LEGB Rule
+# The LEGB Rule
 
 Python uses the **LEGB** rule to define the scope of variables.
 LEGB stands for Local, Enclosing, Global, and Built-in.
@@ -18,7 +10,7 @@ Infact, there are different types of scopes in Python:
 Variables defined within a function are in the local scope.
 They are accessible only within that function. Local variables are created when the function is called and are destroyed when the function terminates.
 
-```
+```python
 def my_function():
     local_var = 10  # Local scope
     print(local_var)
@@ -33,7 +25,7 @@ This scope refers to variables in the enclosing function, which is the function 
 
 If a nested function modifies a variable in the enclosing function, the nonlocal keyword is used.
 
-```
+```python
 def outer_function():
     enclosing_var = 20
     print(enclosing_var)  # Outputs: 20
@@ -52,7 +44,7 @@ Variables defined at the top level of a script or module are in the global scope
 
 To modify a global variable within a function, the global keyword is used.
 
-```
+```python
 global_var = 40  # Global scope
 
 def my_function():
@@ -68,7 +60,7 @@ print(global_var)  # Outputs: 50
 
 This is the scope that contains names that are preassigned in Python. These names are always available and include functions like print(), len(), etc.
 
-```
+```python
 print(len("hello"))  # 'print' and 'len' are built-in functions
 ```
 
@@ -80,7 +72,7 @@ print(len("hello"))  # 'print' and 'len' are built-in functions
 
 Example:
 
-```
+```python
 x = "global"
 
 def outer():
