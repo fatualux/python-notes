@@ -1,7 +1,7 @@
 # Summary
 
 # Introduction
-- [Overview](./chapters/overview.md)
+- [Overview](./overview.md)
 
 # Basic Principles
 - [Principles](./chapters/principles.md)
