@@ -4,12 +4,14 @@
 - [Overview](./overview.md)
 
 # Basic Principles
-- [Principles](./chapters/principles.md)
+- [Principles](./chapters/principles/principles.md)
+    - [Good habits](./chapters/principles/good_habits.md)
 
 # Libraries
 - [Libraries](./chapters/libraries.md)
 
 # Code organization
+- [Modules](./chapters/modules.md)
 - [Variables](./chapters/variables.md)
 - [Functions](./chapters/functions.md)
 - [Methods](./chapters/methods.md)
@@ -21,3 +23,5 @@
 - [Objects](./chapters/objects.md)
 - [Classes](./chapters/classes/classes.md)
     - [Example](./chapters/classes/example.md)
+- [Operations](./chapters/operations.md)
+- [Booleans](./chapters/booleans.md)
