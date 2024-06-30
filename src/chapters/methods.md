@@ -2,7 +2,7 @@
 
 In Python, a **method** is a function that is associated with an object.
 
-![Methods](../static/images/method.png)
+![Methods](../static/images/methods.png)
 
 It defines the behavior of the objects of a class.
 

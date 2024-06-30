@@ -2,7 +2,7 @@
 
 In Python, a **function** is a block of organized code that is used to perform an action. 
 
-![Functions](../static/images/function.png)
+![Functions](../../static/images/function.png)
 
 Functions provide better modularity for applications and a high degree of code reusing, in compliance with the DRY (Don't Repeat Yourself) principle.
 
