@@ -15,7 +15,6 @@ bool(0) # this outputs False
 bool(1) # this outputs True
 bool(-9) # this outputs True, because -9 is non-zero
 not False # this outputs True
-True and False # this outputs False, because True and False are both non-zero
 True and True # this outputs True, because True and True are both non-zero
 True or False # this outputs True, because True or False is non-zero
 3 + True # this outputs 4, because True is equal to 1
