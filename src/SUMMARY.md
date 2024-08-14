@@ -1,36 +1,34 @@
 # Summary
 
-# Introduction
+## Introduction
 - [Overview](./overview.md)
 
-# Basic Principles
+## Basic Principles
 - [Principles](./chapters/principles/principles.md)
-    - [Good habits](./chapters/principles/good_habits.md)
+    - [Good Habits](./chapters/principles/good_habits.md)
 
-# Libraries
-- [Libraries](./chapters/libraries.md)
-
-# Types
+## Data Types
 - [Numbers](./chapters/numbers.md)
 - [Booleans](./chapters/booleans.md)
 - [Strings](./chapters/strings.md)
-    - [Indexing](./chapters/strings/indexing.md)
-    - [Slicing](./chapters/strings/slicing.md)
 - [Lists](./chapters/lists.md)
 - [Tuples](./chapters/tuples.md)
 - [Dictionaries](./chapters/dictionaries.md)
 
-# Code organization
+## Code Organization
 - [Modules](./chapters/modules.md)
+- [Packages](./chapters/packages.md)
 - [Variables](./chapters/variables.md)
 - [Functions](./chapters/functions.md)
 - [Methods](./chapters/methods.md)
-- [Packages](./chapters/packages.md)
-- [Names](./chapters/names.md)
+- [Classes](./chapters/classes/classes.md)
+    - [Example](./chapters/classes/example.md)
+- [Objects](./chapters/objects.md)
+
+## Scoping and Namespaces
 - [Namespaces](./chapters/namespaces.md)
 - [Scopes](./chapters/scopes/scopes.md)
     - [LEGB](./chapters/scopes/legb.md)
-- [Objects](./chapters/objects.md)
-- [Classes](./chapters/classes/classes.md)
-    - [Example](./chapters/classes/example.md)
+
+## Code Operations
 - [Operations](./chapters/operations.md)
