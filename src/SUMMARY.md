@@ -18,6 +18,7 @@
     - [Slicing](./chapters/strings/slicing.md)
 - [Lists](./chapters/lists.md)
 - [Tuples](./chapters/tuples.md)
+- [Dictionaries](./chapters/types/dictionaries.md)
 
 # Code organization
 - [Modules](./chapters/modules.md)
