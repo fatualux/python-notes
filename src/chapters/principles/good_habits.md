@@ -29,16 +29,6 @@ Some PEP8's rules are:
 
 Simplicity is key in coding. Keeping code simple makes it more readable, maintainable, and less prone to errors. Avoid over-engineering and aim for the simplest solution that works.
 
-### SOLID Principles
-
-SOLID is an acronym for five design principles that help in creating more understandable, flexible, and maintainable code.
-
-- **S** - Single Responsibility Principle (SRP): A class should have only one reason to change, meaning it should only have one job or responsibility.
-- **O** - Open/Closed Principle (OCP): Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
-- **L** - Liskov Substitution Principle (LSP): Subtypes must be substitutable for their base types without altering the correctness of the program.
-- **I** - Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
-- **D** - Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions.
-
 ### Code Comments
 
 Comments should be used to explain why certain decisions were made or to clarify complex code. Avoid obvious comments that do not add value. 
