@@ -1,6 +1,6 @@
 # Numbers
 
-![Numbers](../static/images/numbers_1.png)
+![Numbers](../static/images/numbers.png)
 
 In Python, **numbers** are divided into two main types: **integers** and **floats** (real numbers). These types are used for performing arithmetic operations and representing numerical values.
 
@@ -26,22 +26,6 @@ In Python, **numbers** are divided into two main types: **integers** and **float
   num3 = 2.0
 
   print(type(num1))  # Output: <class 'float'>
-  ```
-
-- **Basic Arithmetic Operations**:
-  Python supports standard arithmetic operations for numbers, including addition, subtraction, multiplication, division, and more.
-
-  ```python
-  a = 10
-  b = 5
-
-  addition = a + b        # 15
-  subtraction = a - b     # 5
-  multiplication = a * b  # 50
-  division = a / b        # 2.0
-  exponentiation = a ** b # 100000
-  floor_division = a // b # 2
-  modulo = a % b          # 0
   ```
 
 - **Type Conversion**:

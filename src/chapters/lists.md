@@ -1,6 +1,6 @@
 # Lists
 
-![List](../static/images/lists.png)
+![Lists](../static/images/lists.png)
 
 In Python, **lists** are used to store multiple items in a single variable. Lists are one of the most versatile data types available in Python.
 

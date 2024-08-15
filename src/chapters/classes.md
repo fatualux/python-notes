@@ -2,7 +2,7 @@
 
 In Python, a **class** is <ins>a template, a prototype</ins> that defines the structure and <ins>behavior (attributes and methods)</ins> of objects.
 
-![Classes](../../static/images/class.png)
+![Classes](../../static/images/classes.png)
 
 So, we can say that classes are used to create objects.
 
@@ -13,7 +13,7 @@ A class is defined <ins>using the class keyword</ins> followed by the class name
 Class names are typically written in CamelCase[^1].
 
 
-```
+```python
 class MyClass: # this is how a class is defined
 ```
 
@@ -21,7 +21,7 @@ class MyClass: # this is how a class is defined
 Attributes are variables that belong to the class.
 Methods are functions that belong to the class.
 
-```
+```python
 class MyClass:
     def my_method(self):
         message = "Hello, World!" # this is an attribute
@@ -34,7 +34,7 @@ It is a special method called **constructor** that is automatically called when 
 - **Self Parameter**:
 The <ins>first parameter</ins> of every method in a class, usually named <ins>self</ins>, which refers to the instance calling the method.
 
-```
+```python
 class MyClass:
     def __init__(self): # this is the constructor
         self.my_attribute = "Hello, World!"
@@ -43,7 +43,7 @@ class MyClass:
 - **Creating an Instance**:
 An instance is created by calling the class using its name and passing any required arguments.
 
-```
+```python
 my_instance = MyClass()
 ```
 

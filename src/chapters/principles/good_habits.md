@@ -2,15 +2,11 @@
 
 ### D.R.Y. (Don't Repeat Yourself)
 
-![D.R.Y.](../../static/images/dry.png)
-
 Duplicating some parts of code is an extremely bad practice.
 
 It causes the code to become hardly readable, redundant and difficult to maintain.
 
 ### PEP8
-
-![PEP8](../../static/images/pep8.png)
 
 PEP8 is a style guide for Python code.
 
@@ -28,3 +24,49 @@ Some PEP8's rules are:
 - Use blank lines in functions, sparingly, to indicate logical sections.
 - Imports should usually be on separate lines:
 - Imports are always put at the top of the file.
+
+### KISS (Keep It Simple, Stupid)
+
+Simplicity is key in coding. Keeping code simple makes it more readable, maintainable, and less prone to errors. Avoid over-engineering and aim for the simplest solution that works.
+
+### SOLID Principles
+
+SOLID is an acronym for five design principles that help in creating more understandable, flexible, and maintainable code.
+
+- **S** - Single Responsibility Principle (SRP): A class should have only one reason to change, meaning it should only have one job or responsibility.
+- **O** - Open/Closed Principle (OCP): Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
+- **L** - Liskov Substitution Principle (LSP): Subtypes must be substitutable for their base types without altering the correctness of the program.
+- **I** - Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
+- **D** - Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+### Code Comments
+
+Comments should be used to explain why certain decisions were made or to clarify complex code. Avoid obvious comments that do not add value. 
+
+- **Docstrings**: Use triple quotes to describe modules, classes, and functions. Docstrings should explain the purpose, usage, and any important details.
+- **Inline Comments**: Use sparingly to explain tricky parts of the code. Place comments on the same line as the code they refer to, separated by at least two spaces.
+
+### Refactoring
+
+Refactoring involves changing the structure of existing code without changing its behavior to improve readability and maintainability. Regular refactoring helps in keeping the codebase clean and adaptable.
+
+- **Extract Methods**: Break down large functions into smaller, more manageable ones.
+- **Rename Variables**: Use descriptive names to make the code more understandable.
+- **Remove Dead Code**: Eliminate unused or redundant code to reduce complexity.
+
+### Error Handling
+
+Proper error handling improves the robustness of code. Use exceptions to handle errors and avoid crashing the application.
+
+- **Try-Except Blocks**: Catch exceptions to handle errors gracefully. Avoid using bare `except:` clauses; catch specific exceptions instead.
+- **Finally Clause**: Use `finally` to ensure that cleanup code runs regardless of whether an exception was raised.
+- **Logging**: Log errors and exceptions to help with debugging and monitoring.
+
+### Testing
+
+Testing ensures that your code works as expected and helps catch bugs early. 
+
+- **Unit Tests**: Test individual units of code (e.g., functions or classes) in isolation.
+- **Integration Tests**: Test the interactions between different parts of the application.
+- **Test-Driven Development (TDD)**: Write tests before implementing the code to ensure that the code meets the desired specifications.
+

@@ -2,7 +2,7 @@
 
 In Python, a **variable** is a named storage location that holds data, which can be modified during the execution of the program. Variables are used to store values for later use and are created when a value is assigned to them using the assignment operator (`=`).
 
-![Variables](../static/images/variable.png)
+![Variables](../static/images/variables.png)
 
 ## Key Concepts of Variables in Python
 

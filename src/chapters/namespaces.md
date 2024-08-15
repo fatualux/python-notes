@@ -2,7 +2,7 @@
 
 A **namespace** is a system that ensures the unique identification of names within a program. It acts as a container that holds a set of identifiers (names) and their associated objects, avoiding name conflicts and allowing for the organization of code.
 
-![Namespace](../static/images/namespace.png)
+![Namespaces](../static/images/namespaces.png)
 
 ## Types of Namespaces in Python
 

@@ -2,7 +2,7 @@
 
 Every Python file, which has the extension `.py`, is called a *module*. Python allows us to organize these modules into structures called **packages**, which are essentially directories that contain a special `__init__.py` file.
 
-![Packages](../static/images/packages_05.png)
+![Packages](../static/images/packages.png)
 
 ## Key Concepts of Packages in Python
 

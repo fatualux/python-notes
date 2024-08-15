@@ -1,10 +1,8 @@
 # Overview
 
-These are some notes I have been taking during my Python programming code learning path.
-
 _____
 
-![Python 02](./static/images/python_02.png)
+![Overview](./static/images/overview.png)
 
 _____
 

@@ -1,5 +1,7 @@
 # Modules
 
+![Modules](../static/images/modules.png)
+
 In Python, a **module** is a file containing Python definitions and statements. Modules allow you to organize your Python code into manageable sections and reuse code across different parts of your application. Each module has a `.py` extension.
 
 ## Key Concepts of Modules in Python
