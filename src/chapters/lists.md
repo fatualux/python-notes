@@ -87,14 +87,6 @@ In Python, **lists** are used to store multiple items in a single variable. List
   my_list.pop()      # [9, 5, 4, 3, 2, 1]
   ```
 
-- **List Comprehension**:
-  List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable.
-
-  ```python
-  squares = [x**2 for x in range(10)]  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-  evens = [x for x in range(10) if x % 2 == 0]  # Output: [0, 2, 4, 6, 8]
-  ```
-
 - **Nested Lists**:
   Lists can contain other lists as elements, creating a nested list. This allows for the creation of more complex data structures like matrices or tables.
 
