@@ -89,30 +89,3 @@ To control the number of decimal places displayed, you can format floats using s
   result = int(5.7)  # result is 5
   ```
 
-### Common Use Cases
-
-- **Scientific Calculations**: Floats are often used in scientific and engineering calculations where precision is necessary.
-
-  ```
-  result = 3.14 * 2  # Pi calculations
-  ```
-
-- **Financial Calculations**: Although floats are used, it's important to be aware of precision issues. For exact decimal calculations, consider using the `decimal` module.
-
-  ```
-  from decimal import Decimal
-
-  price = Decimal('19.99')
-  tax = Decimal('0.06')
-  total = price + (price * tax)  # Accurate financial calculation
-  ```
-
-### Limitations and Considerations
-
-- **Precision Limitations**: Be cautious of precision limitations in critical applications like finance or high-precision scientific work.
-- **Alternative Modules**: For greater precision, use the `decimal` module, which offers better control over rounding and precision.
-
-### Conclusion
-
-Floating point numbers are versatile and widely used in Python for real-number calculations. Understanding their characteristics, limitations, and how to manage precision issues is key to using them effectively in your programs.
-
