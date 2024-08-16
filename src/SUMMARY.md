@@ -33,7 +33,6 @@
 # Code Organization
 - [Modules](./chapters/modules.md)
 - [Packages](./chapters/packages.md)
-    - [Creating Packages](./chapters/packages/creating.md)
 - [Variables](./chapters/variables.md)
     - [Global vs. Local Variables](./chapters/variables/global_vs_local.md)
 - [Functions](./chapters/functions.md)
