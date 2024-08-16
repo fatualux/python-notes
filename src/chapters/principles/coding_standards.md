@@ -24,9 +24,6 @@ Coding standards are a set of guidelines that dictate how code should be written
   - Surround top-level functions and class definitions with two blank lines.
   - Method definitions inside a class are separated by a single blank line.
 
-- **Imports**:
-  - Imports should be on separate lines and placed at the top of the file.
-
 ### Benefits of Following Coding Standards
 
 - **Enhanced Readability**: Consistent formatting makes code easier to read and understand.
