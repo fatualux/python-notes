@@ -2,6 +2,8 @@
 
 An **object** is an abstraction for a data structure; everything in Python is an object.
 
+In Object Oriented Programming, we are trying to model *real life objects*, and these objects have things (*attributes*, usually modeled by *variables*) and they also can do things (*methods*, usually modeled by functions, usually modeled by functions).
+
 ![Objects](../static/images/objects.png)
 
 For example, a function can be an object, but a class, a list, a variable can be objects too, and so on. Everything in Python can be defined as an object.
