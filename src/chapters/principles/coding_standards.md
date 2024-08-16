@@ -20,9 +20,6 @@ Coding standards are a set of guidelines that dictate how code should be written
 - **Indentation**:
   - Use 4 spaces per indentation level (as per [PEP8](https://peps.python.org/pep-0008/)).
 
-- **Line Length**:
-  - Limit lines to 79 characters to improve readability.
-
 - **Blank Lines**:
   - Surround top-level functions and class definitions with two blank lines.
   - Method definitions inside a class are separated by a single blank line.
