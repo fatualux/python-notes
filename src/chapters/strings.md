@@ -33,34 +33,6 @@ In Python, strings are sequences of characters enclosed in quotation marks. They
   last_three = word[-3:]  # Output: "hon"
   ```
 
-- **String Methods**:
-  Python provides numerous methods to manipulate strings, such as `lower()`, `upper()`, `strip()`, `replace()`, and `split()`.
-
-  ```python
-  text = "  Hello, World!  "
-  lower_text = text.lower()  # Output: "  hello, world!  "
-  upper_text = text.upper()  # Output: "  HELLO, WORLD!  "
-  stripped_text = text.strip()  # Output: "Hello, World!"
-  replaced_text = text.replace("World", "Python")  # Output: "  Hello, Python!  "
-  words = text.split()  # Output: ['Hello,', 'World!']
-  ```
-
-- **String Formatting**:
-  Strings can be formatted using f-strings (Python 3.6+), `format()` method, or the `%` operator.
-
-  ```python
-  # f-strings (Python 3.6+)
-  name = "Alice"
-  age = 30
-  formatted = f"Name: {name}, Age: {age}"  # Output: "Name: Alice, Age: 30"
-
-  # format() method
-  formatted = "Name: {}, Age: {}".format(name, age)  # Output: "Name: Alice, Age: 30"
-
-  # % operator
-  formatted = "Name: %s, Age: %d" % (name, age)  # Output: "Name: Alice, Age: 30"
-  ```
-
 - **Escape Characters**:
   To include special characters in strings, use escape sequences. Common escape characters include `\n` (new line), `\t` (tab), `\\` (backslash), and `\"` (double quote).
 
