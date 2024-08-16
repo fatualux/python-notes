@@ -1,6 +1,6 @@
 # Sets
 
-![Sets](../../static/images/sets.png)
+![Sets](../static/images/sets.png)
 
 Sets in Python are unordered collections of unique elements. They are similar to lists or dictionaries, but with key differences, such as disallowing duplicate elements and not maintaining any order. Sets are particularly useful when you need to eliminate duplicates, perform membership tests, or apply mathematical set operations like union, intersection, and difference.
 
