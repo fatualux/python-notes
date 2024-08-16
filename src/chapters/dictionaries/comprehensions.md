@@ -96,7 +96,3 @@ Using dictionary comprehensions can make your code more concise and readable com
      # complex_dict is {1: (1, 1, 1), 2: (2, 4, 8), 3: (3, 9, 27)}
      ```
 
-### Conclusion
-
-Dictionary comprehensions are a powerful tool in Python that allows you to create dictionaries in a clean and efficient way. By understanding and using dictionary comprehensions, you can write more concise, readable, and Pythonic code.
-
