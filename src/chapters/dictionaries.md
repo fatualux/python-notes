@@ -74,6 +74,4 @@ A concise way to create dictionaries using a single line of code.
 ```python
     squares = {x: x**2 for x in range(6)}  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 ```
-**SUMMARY**
 
-Dictionaries are a fundamental data structure in Python that provide a way to store data as key-value pairs. They are versatile and widely used for tasks such as storing configuration data, counting frequencies, and representing structured information.
