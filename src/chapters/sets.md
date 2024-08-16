@@ -124,12 +124,8 @@ Sets are highly efficient for membership tests, meaning you can quickly check if
 Similar to list comprehensions, you can use set comprehensions to create sets in a concise manner.
 
 - **Example**:
-  ```
+  ```python
   squared_set = {x**2 for x in range(5)}
   # squared_set is {0, 1, 4, 9, 16}
   ```
-
-### Conclusion
-
-Sets are a versatile and powerful data structure in Python that excel in situations where you need to store unique elements, perform quick membership tests, or apply set operations. Understanding how to use sets effectively can lead to cleaner and more efficient code.
 
