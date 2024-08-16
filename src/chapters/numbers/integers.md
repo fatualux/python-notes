@@ -81,40 +81,4 @@ Python's integers can handle arbitrarily large values, limited only by the avail
 
   ```
   large_int = 123456789012345678901234567890
-  ```
-
-### Bitwise Operations
-
-Python supports bitwise operations on integers, which operate on the binary representations of the numbers.
-
-- **AND**: `&`
-- **OR**: `|`
-- **XOR**: `^`
-- **NOT**: `~`
-- **Left Shift**: `<<`
-- **Right Shift**: `>>`
-
-  ```
-  a = 5       # 0b0101
-  b = 3       # 0b0011
-  result = a & b  # result is 1 (0b0001)
-  ```
-
-### Common Use Cases
-
-- **Counting**: Integers are commonly used as counters in loops.
-  ```
-  for i in range(10):
-      print(i)
-  ```
-
-- **Indexing**: Access elements in data structures like lists or strings using integer indices.
-  ```
-  my_list = [10, 20, 30]
-  print(my_list[1])  # output is 20
-  ```
-
-### Conclusion
-
-Integers are a versatile and essential data type in Python, used in various contexts such as arithmetic operations, comparisons, indexing, and more. Understanding how to work with integers effectively is fundamental to mastering Python programming.
 
