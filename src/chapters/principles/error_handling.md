@@ -23,6 +23,46 @@ finally:
 - **Built-in Exceptions**: Python provides a range of built-in exceptions, such as `ValueError`, `TypeError`, and `FileNotFoundError`.
 - **Custom Exceptions**: You can define your own exceptions by subclassing the `Exception` class.
 
+
+|ERROR|EXPLANATION|
+|---------------|--------------------|
+|ValueError|Raised when a function receives an argument of the right type but an inappropriate value.|
+|TypeError|Raised when an operation or function is applied to an object of inappropriate type.|
+|FileNotFoundError|Raised when trying to open a file that does not exist.|
+
+### ValueError Example
+```python
+def square_root(x):
+    if x < 0:
+        raise ValueError("Cannot compute square root of a negative number.")
+    return x ** 0.5
+
+try:
+    result = square_root(-9)
+except ValueError as e:
+    print(f"ValueError: {e}")
+```
+
+### TypeError Example
+```python
+def add(a, b):
+    return a + b
+
+try:
+    result = add(5, "10")
+except TypeError as e:
+    print(f"TypeError: {e}")
+```
+
+### FileNotFoundError Example
+```python
+try:
+    with open("non_existent_file.txt", "r") as file:
+        content = file.read()
+except FileNotFoundError as e:
+    print(f"FileNotFoundError: {e}")
+```
+
 ### Best Practices
 
 1. **Catch Specific Exceptions**: Handle specific exceptions rather than using a generic `except` clause to avoid masking other issues.
