@@ -36,23 +36,6 @@ Booleans are subclasses of integers, and are represented as **1** (*true*) and *
   is_adult = age >= 18  # True
   ```
 
-- **Comparison Operators**:
-  Python provides several comparison operators that return boolean values. These include:
-  - `==`: Equal to
-  - `!=`: Not equal to
-  - `>`: Greater than
-  - `<`: Less than
-  - `>=`: Greater than or equal to
-  - `<=`: Less than or equal to
-
-  ```python
-  x = 10
-  y = 20
-
-  is_equal = x == y  # False
-  is_greater = x > y  # False
-  ```
-
 - **Truthiness**:
   In Python, objects can be evaluated in a boolean context to determine their "truthiness". Non-zero numbers, non-empty sequences, and non-empty objects are considered `True`, while `0`, `None`, and empty sequences or objects are considered `False`.
 
