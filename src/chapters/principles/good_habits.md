@@ -44,14 +44,6 @@ Refactoring involves changing the structure of existing code without changing it
 - **Rename Variables**: Use descriptive names to make the code more understandable.
 - **Remove Dead Code**: Eliminate unused or redundant code to reduce complexity.
 
-### Error Handling
-
-Proper error handling improves the robustness of code. Use exceptions to handle errors and avoid crashing the application.
-
-- **Try-Except Blocks**: Catch exceptions to handle errors gracefully. Avoid using bare `except:` clauses; catch specific exceptions instead.
-- **Finally Clause**: Use `finally` to ensure that cleanup code runs regardless of whether an exception was raised.
-- **Logging**: Log errors and exceptions to help with debugging and monitoring.
-
 ### Testing
 
 Testing ensures that your code works as expected and helps catch bugs early. 
