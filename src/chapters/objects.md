@@ -90,33 +90,3 @@ Objects encapsulate data and functions (methods) which operate on that data. An 
   del my_car  # Removes the reference to the object; it may be garbage collected
   ```
 
-- **Instance Methods vs. Class Methods**:
-  - **Instance Methods**: Operate on an instance of the class and can access or modify the instance's attributes.
-  - **Class Methods**: Operate on the class itself rather than instances and can be defined using the `@classmethod` decorator.
-
-  ```python
-  class MyClass:
-      @classmethod
-      def class_method(cls):
-          print("This is a class method.")
-
-      def instance_method(self):
-          print("This is an instance method.")
-
-  MyClass.class_method()  # Output: This is a class method.
-  obj = MyClass()
-  obj.instance_method()  # Output: This is an instance method.
-  ```
-
-- **Static Methods**:
-  Static methods do not access or modify class or instance attributes and can be defined using the `@staticmethod` decorator.
-
-  ```python
-  class Math:
-      @staticmethod
-      def add(x, y):
-          return x + y
-
-  print(Math.add(5, 3))  # Output: 8
-  ```
-
