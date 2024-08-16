@@ -68,10 +68,3 @@ items = my_dict.items()  # Get all key-value pairs
 my_dict.update({"name": "Bob", "city": "Los Angeles"})  # Update dictionary
 ```
 
-**Dictionary Comprehensions**:
-A concise way to create dictionaries using a single line of code.
-
-```python
-    squares = {x: x**2 for x in range(6)}  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
-```
-
