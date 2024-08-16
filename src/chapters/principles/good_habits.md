@@ -29,13 +29,6 @@ Some PEP8's rules are:
 
 Simplicity is key in coding. Keeping code simple makes it more readable, maintainable, and less prone to errors. Avoid over-engineering and aim for the simplest solution that works.
 
-### Code Comments
-
-Comments should be used to explain why certain decisions were made or to clarify complex code. Avoid obvious comments that do not add value. 
-
-- **Docstrings**: Use triple quotes to describe modules, classes, and functions. Docstrings should explain the purpose, usage, and any important details.
-- **Inline Comments**: Use sparingly to explain tricky parts of the code. Place comments on the same line as the code they refer to, separated by at least two spaces.
-
 ### Refactoring
 
 Refactoring involves changing the structure of existing code without changing its behavior to improve readability and maintainability. Regular refactoring helps in keeping the codebase clean and adaptable.
