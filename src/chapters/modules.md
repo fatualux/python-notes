@@ -89,25 +89,6 @@ In Python, a **module** is a file containing Python definitions and statements. 
 
   If you run `mymodule.py` directly, it will print "Hello, Main!". If imported into another module, it will not print this message.
 
-- **Packages**:
-  A package is a collection of modules organized in directories. A directory must contain an `__init__.py` file (which can be empty) to be recognized as a package.
-
-  ```
-  # directory structure
-  mypackage/
-      __init__.py
-      module1.py
-      module2.py
-  ```
-
-  You can import modules from a package as follows:
-
-  ```python
-  from mypackage import module1
-
-  module1.some_function()
-  ```
-
 - **Reloading Modules**:
   To reload a module that has been modified since it was first imported, use the `reload()` function from the `importlib` module.
 
