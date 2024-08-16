@@ -51,7 +51,7 @@ The basic syntax of a dictionary comprehension is:
      # combined_dict is {'name': 'Alice', 'age': 28, 'city': 'New York'}
      ```
 
-     Note: the zip function takes two or more iterables and returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the input iterables.
+     Note: the ***zip function*** takes two or more iterables and returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the input iterables.
 
      In this case, zip(keys, values) will produce an iterator of tuples: ('name', 'Alice'), ('age', 28), and ('city', 'New York').
 
