@@ -19,7 +19,7 @@ The basic syntax of a dictionary comprehension is:
 
 1. **Creating a Dictionary from a List**:
    - Example:
-     ```
+     ```python
      numbers = [1, 2, 3, 4]
      squares = {x: x**2 for x in numbers}
      # squares is {1: 1, 2: 4, 3: 9, 4: 16}
@@ -28,7 +28,7 @@ The basic syntax of a dictionary comprehension is:
 2. **Using a Condition in Dictionary Comprehension**:
    - You can filter items using an `if` condition.
    - Example:
-     ```
+     ```python
      numbers = range(10)
      even_squares = {x: x**2 for x in numbers if x % 2 == 0}
      # even_squares is {0: 0, 2: 4, 4: 16, 6: 36, 8: 64}
@@ -36,7 +36,7 @@ The basic syntax of a dictionary comprehension is:
 
 3. **Swapping Keys and Values**:
    - Example:
-     ```
+     ```python
      original_dict = {'a': 1, 'b': 2, 'c': 3}
      swapped_dict = {value: key for key, value in original_dict.items()}
      # swapped_dict is {1: 'a', 2: 'b', 3: 'c'}
@@ -44,7 +44,7 @@ The basic syntax of a dictionary comprehension is:
 
 4. **Combining Two Lists into a Dictionary**:
    - Example:
-     ```
+     ```python
      keys = ['name', 'age', 'city']
      values = ['Alice', 28, 'New York']
      combined_dict = {k: v for k, v in zip(keys, values)}
@@ -53,7 +53,7 @@ The basic syntax of a dictionary comprehension is:
 
 5. **Nested Dictionary Comprehensions**:
    - Example:
-     ```
+     ```python
      nested_dict = {x: {y: y**2 for y in range(3)} for x in range(3)}
      # nested_dict is {0: {0: 0, 1: 1, 2: 4}, 1: {0: 0, 1: 1, 2: 4}, 2: {0: 0, 1: 1, 2: 4}}
      ```
@@ -63,7 +63,7 @@ The basic syntax of a dictionary comprehension is:
 Using dictionary comprehensions can make your code more concise and readable compared to traditional loops.
 
 - **Using a Loop**:
-  ```
+  ```python
   numbers = [1, 2, 3, 4]
   squares = {}
   for x in numbers:
@@ -72,7 +72,7 @@ Using dictionary comprehensions can make your code more concise and readable com
   ```
 
 - **Using Dictionary Comprehension**:
-  ```
+  ```python
   squares = {x: x**2 for x in numbers}
   # squares is {1: 1, 2: 4, 3: 9, 4: 16}
   ```
@@ -82,7 +82,7 @@ Using dictionary comprehensions can make your code more concise and readable com
 1. **Handling Missing Keys with `get()`**:
    - You can handle cases where keys might not exist by using the `get()` method.
    - Example:
-     ```
+     ```python
      data = {'a': 1, 'b': 2, 'c': 3}
      result = {k: data.get(k, 0) for k in ['a', 'b', 'd']}
      # result is {'a': 1, 'b': 2, 'd': 0}
@@ -90,7 +90,7 @@ Using dictionary comprehensions can make your code more concise and readable com
 
 2. **Creating Dictionaries with Complex Values**:
    - Example:
-     ```
+     ```python
      numbers = [1, 2, 3]
      complex_dict = {x: (x, x**2, x**3) for x in numbers}
      # complex_dict is {1: (1, 1, 1), 2: (2, 4, 8), 3: (3, 9, 27)}
