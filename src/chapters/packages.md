@@ -7,8 +7,7 @@ Every Python file, which has the extension `.py`, is called a *module*. Python a
 ## Key Concepts of Packages in Python
 
 - **Definition of Packages**:
-  A package is a directory that contains a special `__init__.py` file along with other modules or sub-packages. The `__init__.py` file can be empty but it is required for Python to recognize the directory as a package (until Python 3.3).
-
+ A package is a collection of modules organized in directories. A directory must contain an __init__.py file (which can be empty) to be recognized as a package.
   ```python
   my_package/
   ├── __init__.py
