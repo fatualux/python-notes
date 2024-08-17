@@ -2,9 +2,11 @@
 
 An **object** is an abstraction for a data structure; everything in Python is an object.
 
+![Objects](../static/images/objects.png)
+
 In Object Oriented Programming, we are trying to model *real life objects*, and these objects have things (*attributes*, usually modeled by *variables*) and they also can do things (*methods*, usually modeled by functions).
 
-![Objects](../static/images/objects.png)
+In other words, an object is a way of combining some piece of data and some functionality, all together.
 
 For example, a function can be an object, but a class, a list, a variable can be objects too, and so on. Everything in Python can be defined as an object.
 
@@ -17,39 +19,6 @@ Objects encapsulate data and functions (methods) which operate on that data. An 
 3. A **value**: The data or state contained within the object.
 
 ## Key Concepts of Objects in Python
-
-- **Creating Objects**:
-  Objects are created by instantiating a class. Each object can have its own state and behavior based on the class it is an instance of.
-
-  ```python
-  class Car:
-      def __init__(self, make, model):
-          self.make = make
-          self.model = model
-
-  my_car = Car("Toyota", "Corolla")
-  ```
-
-- **Accessing Object Attributes**:
-  You can access and modify the attributes of an object using dot notation.
-
-  ```python
-  print(my_car.make)  # Output: Toyota
-  my_car.model = "Camry"
-  print(my_car.model)  # Output: Camry
-  ```
-
-- **Calling Object Methods**:
-  Methods are functions defined within a class that operate on the object’s data. You call a method using dot notation.
-
-  ```python
-  class Dog:
-      def bark(self):
-          print("Woof!")
-
-  my_dog = Dog()
-  my_dog.bark()  # Output: Woof!
-  ```
 
 - **Object Identity**:
   Every object has a unique identity, which can be obtained using the `id()` function. This identity remains constant during the object’s lifetime.
