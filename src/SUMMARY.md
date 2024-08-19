@@ -48,7 +48,6 @@
     - [Polymorphism](./chapters/classes/polymorphism.md)
     - [Encapsulation](./chapters/classes/encapsulation.md)
     - [Abstract Classes](./chapters/classes/abstract_classes.md)
-    - [Magic Methods](./chapters/classes/magic_methods.md)
 - [Objects](./chapters/objects.md)
 
 # Scoping and Namespaces
