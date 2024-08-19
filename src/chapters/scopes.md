@@ -92,7 +92,7 @@ A **scope** is the textual region of a Python program where a namespace is direc
 
   def outer():
       x = 5  # Enclosing scope
-      
+
       def inner():
           x = 2  # Local scope
           print(x)  # Output: 2
