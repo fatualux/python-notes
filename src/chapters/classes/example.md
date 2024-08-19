@@ -63,6 +63,3 @@ senior_dev = SeniorDeveloper("Bob", 10, ["Python", "Java", "C++"], 4)
 ```python
 print(senior_dev.get_details())  # Output: Name: Bob, Experience: 10 years, Languages: Python, Java, C++, Mentoring Experience: 4 years
 ```
-
-[^1]: CamelCase is a naming convention in which the first letter of each word within a compound word is capitalized and the words are concatenated without spaces or underscores.
-
