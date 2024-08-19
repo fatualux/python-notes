@@ -81,25 +81,51 @@ They can take parameters (like regular functions) and operate on the object's in
   - `__len__(self)`: Returns the length of the object, used by `len()`.
   - `__eq__(self, other)`: Defines behavior for the equality operator `==`.
 
-  ```python
-  class Book:
-      def __init__(self, title, author, pages):
-          self.title = title
-          self.author = author
-          self.pages = pages
+```python
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
 
-      def __str__(self):
-          """String representation of the object."""
-          return f"'{self.title}' by {self.author}"
+    def __str__(self):
+        """String representation of the object."""
+        return f"'{self.title}' by {self.author}"
 
-      def __len__(self):
-          """Length of the book in pages."""
-          return self.pages
+    def __repr__(self):
+        """Detailed string representation, useful for debugging."""
+        return f"Book(title='{self.title}', author='{self.author}', pages={self.pages})"
 
-  book = Book("1984", "George Orwell", 328)
-  print(book)        # Output: '1984' by George Orwell
-  print(len(book))   # Output: 328
-  ```
+    def __len__(self):
+        """Length of the book in pages."""
+        return self.pages
+
+    def __eq__(self, other):
+        """Equality comparison between two books."""
+        if isinstance(other, Book):
+            return (self.title == other.title and
+                    self.author == other.author and
+                    self.pages == other.pages)
+        return False
+
+# Creating book instances
+book1 = Book("1984", "George Orwell", 328)
+book2 = Book("1984", "George Orwell", 328)
+book3 = Book("Brave New World", "Aldous Huxley", 268)
+
+# Using __str__ method
+print(book1)        # Output: '1984' by George Orwell
+
+# Using __repr__ method
+print(repr(book1))  # Output: Book(title='1984', author='George Orwell', pages=328)
+
+# Using __len__ method
+print(len(book1))   # Output: 328
+
+# Using __eq__ method
+print(book1 == book2)  # Output: True
+print(book1 == book3)  # Output: False
+```
 
 - **Method Overriding**:
   In a subclass, you can override a method defined in the parent class. This allows you to customize or extend the behavior of inherited methods.
