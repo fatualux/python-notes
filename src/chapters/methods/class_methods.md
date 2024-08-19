@@ -77,7 +77,3 @@ print(person.age)   # Output: 30
 - **Factory Methods**: Use class methods to provide alternative ways to instantiate objects, especially when the initialization logic is complex.
 - **Keep Methods Focused**: Ensure class methods are clear in their purpose and only handle class-level operations.
 
-### Summary
-
-Class methods provide a way to define methods that operate on the class itself rather than on instances. They are useful for class-level operations and alternative constructors, enhancing the flexibility and organization of your class-based code.
-
