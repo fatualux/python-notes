@@ -1,8 +1,11 @@
 # Methods
 
-In Python, a **method** is a function that is associated with an object and defines the behavior of the objects of a class. Methods are defined inside a class and are accessed via instances of that class (objects). They can take parameters (like regular functions) and operate on the object's internal state.
+In Python, a **method** is a function that is associated with an object, and defines the behavior of the objects of a class.
 
 ![Methods](../static/images/methods.png)
+
+In other words, methods are defined inside a class and are accessed via instances of that class (objects).
+They can take parameters (like regular functions) and operate on the object's internal state.
 
 ## Key Concepts of Methods in Python
 
@@ -31,8 +34,8 @@ In Python, a **method** is a function that is associated with an object and defi
           """Instance method that makes the dog bark."""
           print(f"{self.name} says Woof!")
 
-  dog = Dog("Buddy")
-  dog.bark()  # Output: Buddy says Woof!
+  dog = Dog("Scooby-Doo")
+  dog.bark()  # Output: Scooby-Doo says Woof!
   ```
 
 - **Class Methods**:

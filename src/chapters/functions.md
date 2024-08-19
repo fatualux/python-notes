@@ -2,15 +2,13 @@
 
 In Python, a **function** is a block of organized code that is used to perform an action. 
 
-![Functions](../../static/images/functions.png)
+![Functions](../static/images/functions.png)
 
 Functions provide better modularity for applications and a high degree of code reusing, in compliance with the DRY (Don't Repeat Yourself) principle.
 
+Functions names, if made up of several words (compound names), are separated by underscores (e.g. `my_function()`)
+
 They can take parameters (inputs), perform some operations, and optionally return a value.
-
-We define a function using the `def` keyword, followed by the function name, parameters (enclosed within parentheses), and a colon.
-
-The function body is indented and contains the code to be executed.
 
 ## Key Concepts of Functions in Python
 
@@ -35,14 +33,15 @@ The function body is indented and contains the code to be executed.
   ```
 
 - **Parameters and Arguments**:
-  Functions can take parameters, which are inputs that the function can use to perform its task. When calling the function, the actual values passed are called arguments.
+  Functions can take parameters, which are inputs that the function can use to perform its task.
+  When calling the function, the actual values passed are called arguments.
 
   ```python
   def greet(name):
       """Greet a person by their name."""
       print(f"Hello, {name}!")
 
-  greet("Alice")  # Output: Hello, Alice!
+  greet("Isabel")  # Output: Hello, Isabel!
   ```
 
 - **Return Statement**:
@@ -69,7 +68,8 @@ The function body is indented and contains the code to be executed.
   ```
 
 - **Keyword Arguments**:
-  Functions can be called using keyword arguments, where the name of the parameter is explicitly stated. This allows arguments to be passed in any order.
+  Functions can be called using keyword arguments, where the name of the parameter is explicitly stated.
+  This allows arguments to be passed in any order.
 
   ```python
   def describe_pet(animal_type, pet_name):
@@ -97,14 +97,6 @@ The function body is indented and contains the code to be executed.
   #         - mushrooms
   #         - green peppers
   #         - extra cheese
-  ```
-
-- **Anonymous Functions (Lambda Functions)**:
-  Python also supports anonymous functions, also known as lambda functions, which are small, one-line functions defined using the `lambda` keyword.
-
-  ```python
-  add = lambda x, y: x + y
-  result = add(3, 5)  # Output: 8
   ```
 
 - **Docstrings**:
