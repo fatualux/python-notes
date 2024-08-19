@@ -129,7 +129,3 @@ print(child.greet())  # Output: Hello from Parent and Child
 - **Keep Hierarchies Simple**: Avoid deep inheritance hierarchies that can make the codebase complex and difficult to manage.
 - **Document Inheritance**: Clearly document the parent-child relationships and overridden methods to enhance code readability and maintainability.
 
-### Summary
-
-Inheritance is a fundamental concept in object-oriented programming that enables classes to inherit characteristics from other classes. It enhances code reuse and helps in creating a clear class hierarchy, but should be used judiciously to avoid complexity.
-
