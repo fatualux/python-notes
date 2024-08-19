@@ -25,6 +25,8 @@ They can take parameters (like regular functions) and operate on the object's in
 - **The `self` Parameter**:
   The `self` parameter is a reference to the current instance of the class and is used to access variables and methods that belong to the instance. It must be the first parameter in any instance method.
 
+In other words, *self* refers to the actual object that's being created, *initialised*.
+
   ```python
   class Dog:
       def __init__(self, name):
@@ -75,7 +77,7 @@ They can take parameters (like regular functions) and operate on the object's in
 - **Special Methods (Magic Methods)**:
   Python classes have special methods, often referred to as magic methods or dunder methods (double underscore methods), that allow you to define how objects of the class behave in certain situations. These methods are prefixed and suffixed with double underscores (`__`).
 
-  - `__init__(self, ...)`: Called when an instance is created (constructor).
+  - `__init__(self, ...)`: Called when an instance is created (constructor). It is used to initialise attributes.
   - `__str__(self)`: Defines the string representation of an object, used by `str()` and `print()`.
   - `__repr__(self)`: Defines a more detailed string representation, used by `repr()` and in debugging.
   - `__len__(self)`: Returns the length of the object, used by `len()`.
@@ -171,4 +173,7 @@ print(book1 == book3)  # Output: False
   car = Car("Toyota")
   car.accelerate(30).brake(10).display()  # Output: Toyota is going at 20 km/h
   ```
+
+Note that *method chaining* requires a return (`return self`), in order to call the next method.
+Otherwise, the returned value is `None` by default, and chaining method is not possible (a *NoneType* error is raised).
 
