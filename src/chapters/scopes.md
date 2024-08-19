@@ -2,7 +2,7 @@
 
 A **scope** is the textual region of a Python program where a namespace is directly accessible. In other words, a scope defines the areas of a program where variables can be accessed or modified.
 
-![Scopes](../../static/images/scopes.png)
+![Scopes](../static/images/scopes.png)
 
 ## Key Concepts of Scopes in Python
 
