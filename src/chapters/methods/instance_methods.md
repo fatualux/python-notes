@@ -18,8 +18,8 @@ class Car:
         return f"{self.make} {self.model}"
 
 # Create an instance of Car
-my_car = Car("Toyota", "Corolla")
-print(my_car.display_info())  # Output: Toyota Corolla
+my_car = Car("Opel", "Astra")
+print(my_car.display_info())  # Output: Opel Astra
 ```
 
 ### Accessing and Modifying Attributes
@@ -75,8 +75,4 @@ print(rect.perimeter())  # Output: 18
 - **Keep Methods Focused**: Each instance method should have a single responsibility. Avoid making methods too complex or multi-functional.
 - **Document Methods**: Use docstrings to describe the purpose and behavior of instance methods for better code readability and maintainability.
 - **Avoid Modifying Global State**: Instance methods should generally operate on instance data rather than affecting global state or other unrelated instances.
-
-### Summary
-
-Instance methods are essential for defining the behavior of objects in object-oriented programming. They enable classes to encapsulate functionality and manage object-specific data through methods that operate on instances.
 
