@@ -54,7 +54,3 @@ Encapsulation is an OOP concept that involves bundling data (attributes) and met
 - **Flexibility and Maintenance**: It provides the ability to change the internal implementation of the class without affecting the external code that uses the class.
 - **Increased Security**: Protects the internal state of the object from unintended or harmful changes by restricting access to private attributes and methods.
 
-### Conclusion
-
-Encapsulation is a fundamental principle of OOP that helps to safeguard an object's internal state and provide a clear, controlled interface for interacting with that state. By using encapsulation, you can create robust and maintainable code that adheres to good software design practices.
-
