@@ -61,26 +61,6 @@ The basic syntax of a dictionary comprehension is:
      nested_dict = {x: {y: y**2 for y in range(3)} for x in range(3)}
      # nested_dict is {0: {0: 0, 1: 1, 2: 4}, 1: {0: 0, 1: 1, 2: 4}, 2: {0: 0, 1: 1, 2: 4}}
      ```
-
-### Dictionary Comprehensions vs. Loops
-
-Using dictionary comprehensions can make your code more concise and readable compared to traditional loops.
-
-- **Using a Loop**:
-  ```python
-  numbers = [1, 2, 3, 4]
-  squares = {}
-  for x in numbers:
-      squares[x] = x**2
-  # squares is {1: 1, 2: 4, 3: 9, 4: 16}
-  ```
-
-- **Using Dictionary Comprehension**:
-  ```python
-  squares = {x: x**2 for x in numbers}
-  # squares is {1: 1, 2: 4, 3: 9, 4: 16}
-  ```
-
 ### Advanced Use Cases
 
 1. **Handling Missing Keys with `get()`**:
@@ -99,4 +79,3 @@ Using dictionary comprehensions can make your code more concise and readable com
      complex_dict = {x: (x, x**2, x**3) for x in numbers}
      # complex_dict is {1: (1, 1, 1), 2: (2, 4, 8), 3: (3, 9, 27)}
      ```
-

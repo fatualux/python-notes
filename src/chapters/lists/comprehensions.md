@@ -7,7 +7,9 @@ List comprehension in Python is a concise and powerful way to create lists. It a
 The basic syntax of a list comprehension is:
 
 ```python
-[expression for item in iterable]
+# expression for item in iterablea
+# e.g.
+new_list = [new_item for item in list]
 ```
 
 - **expression**: The value to include in the new list.
@@ -85,15 +87,3 @@ List comprehensions are often preferred over loops for their conciseness. Howeve
      result = [x for x in range(20) if x % 2 == 0 and x % 3 == 0]
      # result is [0, 6, 12, 18]
      ```
-
-2. **Dictionary and Set Comprehensions**:
-   - Similar syntax can be used for dictionaries and sets.
-   - Example:
-     ```python
-     square_dict = {x: x**2 for x in range(5)}
-     # square_dict is {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
-
-     unique_squares = {x**2 for x in range(-3, 4)}
-     # unique_squares is {0, 1, 4, 9}
-     ```
-
