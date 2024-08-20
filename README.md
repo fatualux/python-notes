@@ -1,6 +1,6 @@
 # Notes about IT
 
-### This is my seconddigital book, generated with mdBook, a command line tool to create books with Markdown.
+### This is my second digital book, generated with mdBook, a command line tool to create books with Markdown.
 
 ## INSTALLATION
 
