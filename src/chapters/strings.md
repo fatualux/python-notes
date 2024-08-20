@@ -31,6 +31,9 @@ In Python, strings are sequences of characters enclosed in quotation marks. They
   word = "Python"
   first_two = word[:2]  # Output: "Py"
   last_three = word[-3:]  # Output: "hon"
+  every_two = word[::2]  # Output: "Pto"
+  new_step = word[1:4:2]  # Output: "yh"
+
   ```
 
 - **Escape Characters**:
