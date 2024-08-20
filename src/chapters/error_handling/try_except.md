@@ -1,44 +1,81 @@
-## Types of errors
+# Try-Except Blocks
 
-Here is a list of the most common built-in exceptions in Python.
+Try-except blocks handle exceptions and errors that occur during program execution, allowing you to manage unexpected situations and ensure that your program can recover gracefully.
 
-| ERROR                    | EXPLANATION                                                                                  |
-|--------------------------|----------------------------------------------------------------------------------------------|
-| `ValueError`             | Raised when a function receives an argument of the right type but an inappropriate value.    |
-| `TypeError`              | Raised when an operation or function is applied to an object of inappropriate type.          |
-| `FileNotFoundError`      | Raised when trying to open a file that does not exist.                                       |
-| `IndexError`             | Raised when trying to access an element from a list or tuple with an invalid index.          |
-| `KeyError`               | Raised when trying to access a dictionary with a key that does not exist.                    |
-| `AttributeError`         | Raised when an attribute reference or assignment fails.                                      |
-| `ImportError`            | Raised when an import statement fails to find the module definition or when a `from ... import` fails.|
-| `ModuleNotFoundError`    | Raised when a module could not be found.                                                     |
-| `ZeroDivisionError`      | Raised when attempting to divide by zero.                                                    |
-| `NameError`              | Raised when a local or global name is not found.                                             |
-| `UnboundLocalError`      | Raised when trying to access a local variable before it has been assigned.                   |
-| `SyntaxError`            | Raised when the parser encounters a syntax error.                                            |
-| `IndentationError`       | Raised when there is an incorrect indentation.                                               |
-| `TabError`               | Raised when mixing tabs and spaces in indentation.                                           |
-| `IOError`                | Raised when an I/O operation (such as a print statement or the open() function) fails.       |
-| `OSError`                | Raised when a system-related operation causes an error.                                      |
-| `StopIteration`          | Raised to signal the end of an iterator.                                                     |
-| `RuntimeError`           | Raised when an error is detected that doesn't fall in any of the other categories.           |
-| `RecursionError`         | Raised when the maximum recursion depth is exceeded.                                         |
-| `NotImplementedError`    | Raised by abstract methods that need to be implemented by subclasses.                        |
-| `AssertionError`         | Raised when an `assert` statement fails.                                                     |
-| `FloatingPointError`     | Raised when a floating point operation fails.                                                |
-| `OverflowError`          | Raised when the result of an arithmetic operation is too large to be expressed.              |
-| `MemoryError`            | Raised when an operation runs out of memory.                                                 |
-| `EOFError`               | Raised when the `input()` function hits an end-of-file condition.                            |
-| `KeyboardInterrupt`      | Raised when the user hits the interrupt key (usually `Ctrl+C` or `Delete`).                  |
-| `ConnectionError`        | Base class for network-related errors.                                                       |
-| `TimeoutError`           | Raised when a system function timed out.                                                     |
-| `BrokenPipeError`        | Raised when a pipe is broken during a write operation.                                       |
-| `IsADirectoryError`      | Raised when a file operation (such as `open()`) is attempted on a directory.                 |
-| `PermissionError`        | Raised when trying to perform an operation without the necessary permissions.                |
-| `ChildProcessError`      | Raised when a child process operation fails.                                                 |
-| `BlockingIOError`        | Raised when an operation would block on an object (like a socket) set for non-blocking mode. |
-| `SystemExit`             | Raised by the `sys.exit()` function.                                                         |
-| `GeneratorExit`          | Raised when a generator’s `close()` method is called.                                        |
-```
+### Basic Structure
 
-You can copy and paste this markdown code into any markdown editor to see the formatted table.
+1. **Try Block**: Contains code that might raise an exception.
+
+   ```python
+   try:
+       # Code that may raise an exception
+       result = 10 / 0
+   ```
+
+2. **Except Block**: Contains code that executes if an exception occurs in the try block.
+
+   ```python
+   except ZeroDivisionError:
+       # Code to handle the exception
+       print("Cannot divide by zero.")
+   ```
+
+### Example
+
+   ```python
+   try:
+       number = int(input("Enter a number: "))
+       result = 10 / number
+   except ValueError:
+       print("Invalid input; please enter an integer.")
+   except ZeroDivisionError:
+       print("Cannot divide by zero.")
+   except Exception as e:
+       print(f"An unexpected error occurred: {e}")
+   ```
+
+### Multiple Except Blocks
+
+Handle different types of exceptions with multiple except blocks.
+
+   ```python
+   try:
+       # Code that may raise multiple exceptions
+       value = int("not a number")
+   except ValueError:
+       print("ValueError: Invalid input.")
+   except TypeError:
+       print("TypeError: Incorrect type.")
+   ```
+
+### Finally Block
+
+(Optional) Executes code regardless of whether an exception occurred or not, often used for cleanup.
+
+   ```python
+   try:
+       file = open("file.txt", "r")
+       # Code to read file
+   except FileNotFoundError:
+       print("File not found.")
+   finally:
+       file.close()  # Ensure file is closed
+   ```
+
+### Else Block
+
+(Optional) Executes code if no exception occurs in the try block.
+
+   ```python
+   try:
+       result = 10 / 2
+   except ZeroDivisionError:
+       print("Cannot divide by zero.")
+   else:
+       print(f"Division successful, result is {result}.")
+   ```
+
+### Conclusion
+
+Try-except blocks are crucial for robust error handling in Python. They help manage exceptions gracefully, ensuring that your program can handle errors without crashing and perform necessary cleanup or alternative actions.
+
