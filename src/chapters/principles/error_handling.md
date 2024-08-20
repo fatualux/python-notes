@@ -23,13 +23,6 @@ finally:
 - **Built-in Exceptions**: Python provides a range of built-in exceptions, such as `ValueError`, `TypeError`, and `FileNotFoundError`.
 - **Custom Exceptions**: You can define your own exceptions by subclassing the `Exception` class.
 
-
-|ERROR|EXPLANATION|
-|---------------|--------------------|
-|ValueError|Raised when a function receives an argument of the right type but an inappropriate value.|
-|TypeError|Raised when an operation or function is applied to an object of inappropriate type.|
-|FileNotFoundError|Raised when trying to open a file that does not exist.|
-
 ### ValueError Example
 ```python
 def square_root(x):
