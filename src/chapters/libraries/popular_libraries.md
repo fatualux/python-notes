@@ -215,9 +215,35 @@ Python's ecosystem is vast, with a wealth of third-party libraries that extend i
   - Supports TCP, UDP, and more.
 - **Example**:
   ```python
-  import socket
 
-  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  s.connect(("www.example.com", 80))
-  s.sendall(b"GET / HTTP/1.1\r\nHost:
+import socket
+
+# Create a socket object
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Define the host and port
+host = "www.example.com"
+port = 80
+
+# Connect to the server
+s.connect((host, port))
+
+# Send an HTTP GET request
+request = "GET / HTTP/1.1\r\nHost: {}\r\nConnection: close\r\n\r\n".format(host)
+s.sendall(request.encode('utf-8'))
+
+# Receive the response from the server
+response = b""
+while True:
+    data = s.recv(4096)
+    if not data:
+        break
+    response += data
+
+# Close the socket
+s.close()
+
+# Print the response
+print(response.decode('utf-8'))
+```
 
