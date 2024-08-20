@@ -6,8 +6,10 @@ Dictionary comprehensions in Python provide a concise way to create dictionaries
 
 The basic syntax of a dictionary comprehension is:
 
-```
-{key_expression: value_expression for item in iterable}
+```python
+# {key_expression: value_expression for item in iterable}
+# e.g.
+ new_dict = {new_key:new_value for item in list}
 ```
 
 - **key_expression**: The expression that defines the key in the dictionary.
