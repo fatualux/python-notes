@@ -83,23 +83,6 @@ Inheritance is an object-oriented programming concept that allows a class (child
    print(bike.ride())  # Output: Riding bike
    ```
 
-### Method Overriding
-
-Child classes can override methods from the parent class to provide specific behavior.
-
-```python
-class Parent:
-    def greet(self):
-        return "Hello from Parent"
-
-class Child(Parent):
-    def greet(self):
-        return "Hello from Child"
-
-child = Child()
-print(child.greet())  # Output: Hello from Child
-```
-
 ### The `super()` Function
 
 The `super()` function is used to call methods from a parent class from within a child class. This is useful for extending the functionality of inherited methods.
