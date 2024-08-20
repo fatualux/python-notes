@@ -11,6 +11,7 @@
     - [Good Habits](./chapters/principles/good_habits.md)
     - [Coding Standards](./chapters/principles/coding_standards.md)
     - [Error Handling](./chapters/principles/error_handling.md)
+      - [Error Types](./chapters/error_handling/error_types.md)
     - [Testing](./chapters/principles/testing.md)
     - [Documentation](./chapters/principles/documentation.md)
 
@@ -23,7 +24,7 @@
 - [Strings](./chapters/strings.md)
     - [String Formatting](./chapters/strings/formatting.md)
     - [String Methods](./chapters/strings/methods.md)
-- [Lists](./chapters/lists.md)
+  - [Lists](./chapters/lists.md)
     - [List Comprehensions](./chapters/lists/comprehensions.md)
 - [Tuples](./chapters/tuples.md)
 - [Dictionaries](./chapters/dictionaries.md)

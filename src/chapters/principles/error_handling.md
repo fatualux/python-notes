@@ -66,7 +66,7 @@ except FileNotFoundError as e:
 ### Best Practices
 
 1. **Catch Specific Exceptions**: Handle specific exceptions rather than using a generic `except` clause to avoid masking other issues.
-   
+
    ```python
    try:
        # Code that might raise an exception
