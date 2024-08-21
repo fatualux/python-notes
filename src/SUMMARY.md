@@ -84,6 +84,7 @@
 - [Popular Libraries](./chapters/libraries/popular_libraries.md)
     - [Pandas](./chapters/libraries/pandas.md)
     - [Tkinter](./chapters/libraries/tkinter.md)
+      - [Tkinter Demo Script](./chapters/libraries/tkinter_demo.md)
 - [Frameworks](./chapters/frameworks.md)
 
 # Tools and Best Practices
