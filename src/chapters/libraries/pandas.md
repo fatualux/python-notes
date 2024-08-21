@@ -49,7 +49,7 @@ Pandas has a built-in loop called "iterrows":
   students_df = pd.DataFrame(data)
   for (index, row) in students_df.iterrows():
       print(row)
-      # It prints out every row, and eack row is a pandas' serie
+      # It prints out every row, and eack row is a pandas' series
   ```
 
 ### 2. **Series**
@@ -63,7 +63,7 @@ Pandas has a built-in loop called "iterrows":
   import pandas as pd
 
   s = pd.Series([1, 2, 3, 4, 5])
-  print(s)
+  print(s) # It outputs evry index with the corresponding item on a new line
   ```
 
 ### 3. **Indexing and Selection**
