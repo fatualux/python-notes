@@ -14,10 +14,42 @@ Pandas is a powerful and flexible data analysis and manipulation library for Pyt
 - **Example**:
   ```python
   import pandas as pd
+  
+  data = {
+      'Name': ['Michele', 'Eleonora', 'Isabel', 'Simone'],
+      'Age': [8, 6, 7, 5]
+      }
+  students_df = pd.DataFrame(data)
+  print(students_df)
+  # output:        Name  Age
+  #            0   Michele    8
+  #            1  Eleonora    6
+  #            2    Isabel    7
+  #            3    Simone    5
+  ```
 
-  data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
-  df = pd.DataFrame(data)
-  print(df)
+You can loop through a dataframe in the same way you loop through a dictionary.
+
+**Loop through columns**:
+
+  ```python
+  for (key, value) in students_df.items():
+     print(key)
+     # Output: Name
+     #         Age
+     print(value)
+     # This will print the data in each of the columns,
+     # but it is pretty useless
+  ```
+
+**Loop through rows:**
+Pandas has a built-in loop called "iterrows":
+
+  ```python
+  students_df = pd.DataFrame(data)
+  for (index, row) in students_df.iterrows():
+      print(row)
+      # It prints out every row, and eack row is a pandas' serie
   ```
 
 ### 2. **Series**
