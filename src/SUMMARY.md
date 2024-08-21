@@ -82,6 +82,7 @@
 # Libraries and Frameworks
 - [Standard Library](./chapters/libraries/standard_library.md)
 - [Popular Libraries](./chapters/libraries/popular_libraries.md)
+    - [Pandas](./chapters/libraries/pandas.md)
 - [Frameworks](./chapters/frameworks.md)
 
 # Tools and Best Practices

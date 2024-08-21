@@ -246,4 +246,3 @@ Python's ecosystem is vast, with a wealth of third-party libraries that extend i
   # Print the response
   print(response.decode('utf-8'))
 ```
-
