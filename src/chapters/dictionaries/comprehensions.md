@@ -63,6 +63,15 @@ The basic syntax of a dictionary comprehension is:
      nested_dict = {x: {y: y**2 for y in range(3)} for x in range(3)}
      # nested_dict is {0: {0: 0, 1: 1, 2: 4}, 1: {0: 0, 1: 1, 2: 4}, 2: {0: 0, 1: 1, 2: 4}}
      ```
+
+6. **Converting values in a dictionary**
+  - Example:
+  ```python
+    weather_c = {"Monday": 12, "Tuesday": 14, "Wednesday": 15, "Thursday": 14, "Friday": 21, "Saturday": 22, "Sunday": 24}
+    weather_f = {day:((temp_c * 9/5) + 32) for (day, temp_c) in weather_c.items()}
+    print(weather_f)
+  ```
+
 ### Advanced Use Cases
 
 1. **Handling Missing Keys with `get()`**:
