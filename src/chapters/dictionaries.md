@@ -86,4 +86,3 @@ values = my_dict.values()  # Get all values
 items = my_dict.items()  # Get all key-value pairs
 my_dict.update({"name": "Bob", "city": "Los Angeles"})  # Update dictionary
 ```
-
