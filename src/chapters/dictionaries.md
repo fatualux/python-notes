@@ -54,6 +54,25 @@ del my_dict["city"]  # Remove 'city' key-value pair
 email = my_dict.pop("email")  # Remove and return the value of 'email'
 last_item = my_dict.popitem()  # Remove and return the last inserted key-value pair
 ```
+
+**Looping through dictionaries**
+```python
+student_dict = {
+    "student": ["Michele", "Eleonora", "Isabel", "Simone"],
+    "age": [8, 6, 7, 5]
+}
+print(student_dict)
+# output: {'student': ['Michele', 'Eleonora', 'Isabel', 'Simone'], 'age': [8, 6, 7, 5]}
+
+for (key, value) in student_dict.items():
+    print(key)
+    # output: student
+    #         age
+    print(value)
+    # output: ['Michele', 'Eleonora', 'Isabel', 'Simone']
+    #         [8, 6, 7, 5]
+```
+
 **Dictionary Methods**:
 
 - **keys()**: Returns a view object of all keys.
