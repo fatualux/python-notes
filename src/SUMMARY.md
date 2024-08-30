@@ -78,6 +78,7 @@
     - [Asynchronous Programming](./chapters/advanced/async.md)
 - [Memory Management](./chapters/advanced/memory_management.md)
 - [Profiling and Optimization](./chapters/advanced/profiling.md)
+- [API](./chapters/advanced/api.md)
 
 # Libraries and Frameworks
 - [Standard Library](./chapters/libraries/standard_library.md)
@@ -87,7 +88,6 @@
       - [Tkinter Demo Script](./chapters/libraries/tkinter_demo.md)
     - [Json](./chapters/libraries/json.md)
 - [Frameworks](./chapters/frameworks.md)
-- [API](./chapters/api.md)
 
 # Tools and Best Practices
 - [Version Control](./chapters/tools/version_control.md)
