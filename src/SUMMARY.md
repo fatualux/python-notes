@@ -87,6 +87,7 @@
       - [Tkinter Demo Script](./chapters/libraries/tkinter_demo.md)
     - [Json](./chapters/libraries/json.md)
 - [Frameworks](./chapters/frameworks.md)
+- [API](./chapters/api.md)
 
 # Tools and Best Practices
 - [Version Control](./chapters/tools/version_control.md)
