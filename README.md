@@ -9,7 +9,7 @@
 ## USAGE
 
 ```
-git clone https://gitlab.com/fatualux/it-notes && cd it-notes
+git clone https://gitlab.com/fatualux/python-notes && cd python-notes
 mdbook serve
 ```
 
