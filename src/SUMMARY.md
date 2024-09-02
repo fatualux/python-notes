@@ -81,6 +81,7 @@
 - [API](./chapters/advanced/api.md)
   - [Requests](./chapters/advanced/requests.md)
 - [Environment Variables](./chapters/advanced/env_variables.md)
+- [Web Scraping](./chapters/advanced/web_scraping.md)
 
 # Libraries and Frameworks
 - [Standard Library](./chapters/libraries/standard_library.md)
