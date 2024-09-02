@@ -79,6 +79,7 @@
 - [Memory Management](./chapters/advanced/memory_management.md)
 - [Profiling and Optimization](./chapters/advanced/profiling.md)
 - [API](./chapters/advanced/api.md)
+  - [Requests](./chapters/advanced/requests.md)
 - [Environment Variables](./chapters/advanced/env_variables.md)
 
 # Libraries and Frameworks
