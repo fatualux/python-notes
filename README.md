@@ -1,4 +1,4 @@
-# Notes about IT
+# Notes about Python
 
 ### This is my second digital book, generated with mdBook, a command line tool to create books with Markdown.
 
