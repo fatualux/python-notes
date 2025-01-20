@@ -39,6 +39,7 @@
 - [Functions](./chapters/functions.md)
     - [Lambda Functions](./chapters/functions/lambda.md)
     - [Higher-order Functions](./chapters/functions/higher_order.md)
+    - [Difference between yield and return](./chapters/functions/yield.md)
 - [Methods](./chapters/methods.md)
     - [Instance Methods](./chapters/methods/instance_methods.md)
     - [Class Methods](./chapters/methods/class_methods.md)
