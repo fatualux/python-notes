@@ -100,3 +100,10 @@
 - [Code Review](./chapters/tools/code_review.md)
 - [Continuous Integration and Deployment](./chapters/tools/ci_cd.md)
 
+# S.O.L.I.D Principles
+- [Good Architecture](./chapters/solid/good_architecture.md)
+- [Single Responsibility Principle](./chapters/solid/single_responsibility.md)
+- [Open/Closed Principle](./chapters/solid/open_closed.md)
+- [Liskov Substitution Principle](./chapters/solid/liskov_substitution.md)
+- [Interface Segregation Principle](./chapters/solid/interface_segregation.md)
+- [Dependency Inversion Principle](./chapters/solid/dependency_inversion.md)
