@@ -1,6 +1,13 @@
 # Liskov Substitution Principle
 
-"Functions that use pointers or references to a base class must be able to use objects of any derived class without knowing it."
+”What is wanted here is something like the following substitution 
+property: If for each object o1 of type S there is an object o2 of type T 
+such that for all programs P defined in terms of T, the behavior of P is 
+unchanged when o1 is substituted for o2 then S is a subtype of T.”
+(Barbara Liskov, Data Abstraction and Hierarchy)
+
+Or in simplified form: 
+”Subtypes must be substitutable for their base types.”
 
 The Liskov Substitution Principle (LSP) is a fundamental principle of object-oriented design within the S.O.L.I.D framework.
 
@@ -44,3 +51,9 @@ def make_bird_fly(bird: Bird):
 penguin = Penguin()
 make_bird_fly(penguin)  # This will raise an exception
 ```
+
+CONCLUSION:
+
+Make sure that inheritance is about behavior, not about data.
+Make sure that the contract of base types is adhered to.
+Make sure to adhere to the required concepts.

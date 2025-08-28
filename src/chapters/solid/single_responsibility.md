@@ -1,11 +1,27 @@
 # Single Responsibility Principle
 
-"There should never be more than one reason for a class to change."
+”The single responsibility principle states that every module or class 
+should have responsibility over a single part of the functionality 
+provided by the software, and that responsibility should be entirely 
+encapsulated by the class, module or function. All its services should be 
+narrowly aligned with that responsibility." (Wikipedia)
+
+”A class should have only one reason to change.” 
+(Robert C. Martin, Agile Software Development)
 
 The Single Responsibility Principle (SRP) is one of the five principles of object-oriented design known as S.O.L.I.D.
 
 It states that a class should have only one reason to change, meaning it should only have one central job or responsibility. 
 This principle helps in creating more maintainable and understandable code.
+
+”We want to design components that are self-contained: independent, 
+and with a single, well-defined purpose ([...] cohesion). When 
+components are isolated from one another, you know that you can 
+change one without having to worry about the rest.”
+(Andrew Hunt, David Thomas, The Pragmatic Programmer)
+
+Prefer cohesive software entities. Everything that does not 
+strictly belong together, should be separated
 
 ## Example:
 

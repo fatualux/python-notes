@@ -1,6 +1,8 @@
 # Open/Closed Principle
 
-"Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification."
+”Software artifacts (classes, modules, functions, etc.) should be open 
+for extension, but closed for modification.” 
+(Bertrand Meyer, Object-Oriented Software Construction)
 
 The Open/Closed Principle (OCP) is another key principle of object-oriented design within the S.O.L.I.D framework.
 

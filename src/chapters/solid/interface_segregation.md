@@ -1,8 +1,12 @@
 # Interface Segregation Principle
 
-"A client should not be forced to depend on interfaces it does not use."
+”Clients should not be forced to depend on methods that they do not use.” 
+(Robert C. Martin, Agile Software Development)
 
 This principle encourages the creation of smaller, more specific interfaces rather than a large, general-purpose one.
+
+Many client specific interfaces are better than one general-purpose 
+interface.
 
 ## Example
 
@@ -33,3 +37,7 @@ class IFax:
 ```
 
 Now, each printer can implement only the interfaces it needs, adhering to the Interface Segregation Principle.
+
+CONCLUSION
+
+Make sure interfaces don’t induce unnecessary dependencies.
