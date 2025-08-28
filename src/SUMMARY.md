@@ -107,3 +107,8 @@
 - [Liskov Substitution Principle](./chapters/solid/liskov_substitution.md)
 - [Interface Segregation Principle](./chapters/solid/interface_segregation.md)
 - [Dependency Inversion Principle](./chapters/solid/dependency_inversion.md)
+
+# Design Patterns
+- [Creational Patterns](./chapters/design_patterns/creational.md)
+- [Structural Patterns](./chapters/design_patterns/structural.md)
+- [Behavioral Patterns](./chapters/design_patterns/behavioral.md)
