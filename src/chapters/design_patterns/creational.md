@@ -176,9 +176,11 @@ class EagerSingletonMeta(type):
     # override: called during creation of sub-types
     def __init__(cls, name, bases, attrs):
         super().__init__(name, bases, attrs)
-        cls._instances[cls] = cls()
-        # eager loading
-        cls._instances[cls].__init__()
+        # eager loading of the class instance
+        cls._instances[cls] = super().__call__()
+        # return the single instance of the class
+        def __call__(cls, *args, **kwargs):
+            return cls._instances[cls]
 
     # returns the single instance of the class
     def get_instance(cls):
@@ -192,4 +194,3 @@ class EagerSingleton(metaclass=EagerSingletonMeta):
     def some_logic(self):
         print(f"EagerSingleton: {self.state}")
 ```
-
