@@ -109,6 +109,9 @@
 - [Dependency Inversion Principle](./chapters/solid/dependency_inversion.md)
 
 # Design Patterns
+- [Gang of Four (GoF) Patterns](./chapters/design_patterns/gof_patterns.md)
 - [Creational Patterns](./chapters/design_patterns/creational.md)
+    - [Singleton](./chapters/design_patterns/creational/singleton.md)
+    - [Factory Method](./chapters/design_patterns/creational/factory_method.md)
 - [Structural Patterns](./chapters/design_patterns/structural.md)
 - [Behavioral Patterns](./chapters/design_patterns/behavioral.md)
