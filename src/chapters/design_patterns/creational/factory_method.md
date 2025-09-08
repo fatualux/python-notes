@@ -54,8 +54,8 @@ This pattern is often used with the following **GoF patterns**:
 There are two main variants of the pattern:
 1. The very popular **Simple Factory Method** variant (also called **Parameterized Factory Method pattern**).
 
-![](/src/static/images/factoryUML_0.png)
+![](../static/images/factoryUML_0.png)
 
 2. The classic (or original) **GoF Factory Method** variant.
 
-![](/src/static/images/factoryUML_1.png)
+![](../static/images/factoryUML_1.png)
