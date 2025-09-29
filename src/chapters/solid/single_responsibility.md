@@ -66,26 +66,18 @@ class TaskManager:
     def delete_task(self, task: str):
         self.tasks.remove(task)
 
-    def get_tasks(self):
-        return self.tasks
+class TaskInput:
+    @staticmethod
+    def input_tasks():
+        return input("Enter a task: ")
 
-class TaskInputHandler:
-    def __init__(self, task_manager: TaskManager):
-        self.task_manager = task_manager
+    @staticmethod
+    def remove_task():
+        return input("Enter a task to remove: ")
 
-    def input_tasks(self):
-        tasks = input("Enter a task: ")
-        self.task_manager.add_task(tasks)
-
-    def remove_task(self):
-        tasks = input("Enter a task to remove: ")
-        self.task_manager.delete_task(tasks)
-
-class TaskDisplay:
-    def __init__(self, task_manager: TaskManager):
-        self.task_manager = task_manager
-
-    def display_tasks(self):
-        for task in self.task_manager.get_tasks():
+class TaskPresenter:
+    @staticmethod
+    def display_tasks(tasks):
+        for task in tasks:
             print(f"Task: {task}")
 ```

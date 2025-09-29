@@ -33,23 +33,42 @@ def make_bird_fly(bird: Bird):
     if isinstance(bird, Sparrow):
         bird.chirp()  # This works for Sparrows specifically
 
-# Example usage:
-sparrow = Sparrow()
-make_bird_fly(sparrow)  # This will call fly() and chirp() for Sparrow
-```
-
-- And if we wanted to violate LSP:
+The wrong way:
 ```python
+class Bird:
+    def fly(self):
+        print("Flying")
+
 class Penguin(Bird):
     def fly(self):
-        raise Exception("Penguins can't fly")  # Violates LSP
+        raise Exception("I cannot fly")
+```
 
-def make_bird_fly(bird: Bird):
-    bird.fly()  # This will cause an exception if a Penguin is passed
+- If we were to use the Penguin class in a context where a Bird is expected,
+we might get unexpected behavior due to the overridden fly() method.
+This can lead to errors and inconsistencies in the code.
 
-# Example usage:
-penguin = Penguin()
-make_bird_fly(penguin)  # This will raise an exception
+The right way:
+```python
+class Bird:
+    def fly(self):
+        pass
+
+class FlyingBird(Bird):
+    def fly(self):
+        print("Flying")
+
+class NonFlyingBird(Bird):
+    def fly(self):
+        print("I cannot fly")
+
+class Sparrow(FlyingBird):
+    def chirp(self):
+        print("Chirping")
+
+class Penguin(NonFlyingBird):
+    def swim(self):
+        print("Swimming")
 ```
 
 CONCLUSION:

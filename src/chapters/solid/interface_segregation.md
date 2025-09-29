@@ -14,9 +14,14 @@ Consider a large interface for a printer:
 
 ```python
 class IPrinter:
-    def print_document(self, document: Document): pass
-    def scan_document(self, document: Document): pass
-    def fax_document(self, document: Document): pass
+    def print_document(self):
+        pass
+    
+    def scan_document(self):
+        pass
+    
+    def fax_document(self):
+        pass
 ```
 
 A multi-function printer implements all methods, but a simple printer only needs the `print_document` method. This forces the simple printer to implement unnecessary methods.
@@ -26,17 +31,33 @@ A multi-function printer implements all methods, but a simple printer only needs
 Split the large interface into smaller ones:
 
 ```python
-class IPrinter:
-    def print_document(self, document: Document): pass
 
-class IScanner:
-    def scan_document(self, document: Document): pass
+class IPrinter:
+    def print_document(self):
+        pass
+
+class Scanner:
+    def scan_document(self):
+        pass
 
 class IFax:
-    def fax_document(self, document: Document): pass
+    def fax_document(self):
+        pass
+
+class Printer:
+    def print_document(IPrinter):
+        print("Printing...")
+
+class Scanner:
+    def scan_document(IScanner):
+        print("Scannining...")
+
+class Fax:
+    def fax_document(IFax):
+        print("Faxing...")
 ```
 
-Now, each printer can implement only the interfaces it needs, adhering to the Interface Segregation Principle.
+Now, each device can implement only the interfaces it needs, adhering to the Interface Segregation Principle.
 
 CONCLUSION
 

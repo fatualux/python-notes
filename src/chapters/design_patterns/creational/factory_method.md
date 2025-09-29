@@ -59,3 +59,5 @@ There are two main variants of the pattern:
 2. The classic (or original) **GoF Factory Method** variant.
 
 ![](../static/images/factoryUML_1.png)
+
+For every concrete instance of tah e implementation of 

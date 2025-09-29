@@ -4,13 +4,37 @@
 for extension, but closed for modification.” 
 (Bertrand Meyer, Object-Oriented Software Construction)
 
-The Open/Closed Principle (OCP) is another key principle of object-oriented design within the S.O.L.I.D framework.
+The Open/Closed Principle (OCP) is another key principle of object-oriented design within the S. O. L. I. D framework.
 
 It encourages developers to design systems that can be easily extended to accommodate new functionality without altering existing code.
 
 This can be achieved through the use of interfaces, abstract classes, and polymorphism.
 
 ## Example
+
+The wrong way:
+
+```python
+class AreaCalculator:
+    def calculate_area(self, shape):
+        if isinstance(shape, Rectangle):
+            return shape.width * shape.height
+        elif isinstance(shape, Circle):
+            return 3.14* (shape.radius **2)
+        # If we want to add a new shape, we have to modify this method
+        # which violates the Open/Closed Principle
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+```
+
+
 
 ```python
 from abc import ABC, abstractmethod
@@ -38,7 +62,7 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return 3.14 * (self.radius ** 2)
+        return 3.14159 * (self.radius**2)
 
 def calculate_area(shapes):
     return sum(shape.area() for shape in shapes)
