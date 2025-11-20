@@ -60,4 +60,4 @@ There are two main variants of the pattern:
 
 ![](../static/images/factoryUML_1.png)
 
-For every concrete instance of tah e implementation of 
+For every concrete instance of the implementation of the common interface.
