@@ -51,14 +51,12 @@ class SpaceShip(ABC):
 
     @abstractmethod
     def fly(self) -> str:
-        ...
+        pass
 
     @abstractmethod
     def shoot(self) -> str:
-        ...
+        pass
 
-
-# -------- SHIPS -------- #
 
 class MilleniumFalcon(SpaceShip):
     def fly(self):
