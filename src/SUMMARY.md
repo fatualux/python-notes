@@ -114,5 +114,7 @@
     - [Singleton](./chapters/design_patterns/creational/singleton.md)
     - [Factory Method](./chapters/design_patterns/creational/factory_method.md)
       - [Factory Method Example](./chapters/design_patterns/creational/factory_method_example.md)
+    - [Builder Pattern](./chapters/design_patterns/creational/builder_pattern.md))
+      - [Builder Pattern Example](./chapters/design_patterns/creational/builder_pattern_example.md)
 - [Structural Patterns](./chapters/design_patterns/structural.md)
 - [Behavioral Patterns](./chapters/design_patterns/behavioral.md)
