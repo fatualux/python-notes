@@ -30,107 +30,33 @@ The Builder Pattern is grounded in several core principles:
     - Reduces the likelihood of errors during object creation by enforcing a step-by-step approach.
     - Makes it easier to add new configurations without affecting existing code.
 
-- **Example**: Consider the following scenario: Imagine that you are coding the process of building a house for a video game. A house can be a complex object with numerous attributes, which may include:
+![Example1](../../../static/images/builder_pattern.png)
 
-    1. Walls
-    2. Windows
-    3. Floors
-    4. Garage
-    5. Swimming Pool
-    6. Doors
-    7. Backyard
-    8. Garden
-    9. Basement
-    10. Roof
+### When to Use the Builder Pattern
 
-This structure reflects a hierarchy of components that make up the house, each contributing to its overall functionality and appearance.
+The Builder Pattern is particularly beneficial in the following scenarios:
 
-To design this object in a way that adheres to the Builder Pattern principles, you might create a `House` class along with a `HouseBuilder` to simplify the construction process. Instead of having a long and complex constructor for the `House` class, you could implement something like this:
+1. **Complex Classes with Multiple Constructors**: 
+   - When you have a complex class that requires many constructors, the Builder Pattern provides a more manageable approach, allowing you to construct objects in a step-by-step manner. This flexibility enables you to skip unnecessary steps.
 
-```python
-class House:
-    def __init__(self, walls, windows, floors, garage, swimming_pool, doors, backyard, garden, basement, roof):
-        self.walls = walls
-        self.windows = windows
-        self.floors = floors
-        self.garage = garage
-        self.swimming_pool = swimming_pool
-        self.doors = doors
-        self.backyard = backyard
-        self.garden = garden
-        self.basement = basement
-        self.roof = roof
+2. **Complex Composite Tree Structures**: 
+   - If you need to build complex composite tree objects, the Builder Pattern is an ideal choice. It allows you to build these objects hierarchically and configure them piece by piece, ensuring each part is correctly established before moving on.
 
-class HouseBuilder:
-    def __init__(self):
-        self.walls = 0
-        self.windows = 0
-        self.floors = 0
-        self.garage = False
-        self.swimming_pool = False
-        self.doors = 0
-        self.backyard = False
-        self.garden = False
-        self.basement = False
-        self.roof = False
+3. **Different Representations of a Complex Object**:
+   - When you want to create various representations of the same complex object while still adhering to a consistent construction process, the Builder Pattern facilitates this by separating the representation from the construction, allowing for diverse configurations without redundancy.
 
-    def set_walls(self, walls):
-        self.walls = walls
-        return self
+### When Not to Use the Builder Pattern
 
-    def set_windows(self, windows):
-        self.windows = windows
-        return self
+While the Builder Pattern is powerful, it is not always necessary. Here are situations where its use may be unwarranted:
 
-    def set_floors(self, floors):
-        self.floors = floors
-        return self
+1. **Simple Objects**: 
+   - The Builder Pattern is not suitable for simple objects that do not require significant configuration. For cases with straightforward instantiation where only a few parameters are involved, using a Factory Method may be more efficient and appropriate.
 
-    def add_garage(self):
-        self.garage = True
-        return self
+2. **Performance Constraints**:
+   - In performance-critical applications, the overhead associated with constructing objects via the Builder Pattern may introduce latency that is unacceptable. In such cases, direct instantiation may be preferable.
 
-    def add_swimming_pool(self):
-        self.swimming_pool = True
-        return self
-
-    def set_doors(self, doors):
-        self.doors = doors
-        return self
-
-    def add_backyard(self):
-        self.backyard = True
-        return self
-
-    def add_garden(self):
-        self.garden = True
-        return self
-
-    def add_basement(self):
-        self.basement = True
-        return self
-
-    def add_roof(self):
-        self.roof = True
-        return self
-
-    def build(self):
-        return House(self.walls, self.windows, self.floors, self.garage, self.swimming_pool, self.doors, self.backyard, self.garden, self.basement, self.roof)
-
-# Example client code
-builder = HouseBuilder()
-my_house = (builder.set_walls(4)
-               .set_windows(10)
-               .set_floors(2)
-               .add_garage()
-               .add_swimming_pool()
-               .set_doors(3)
-               .add_backyard()
-               .add_garden()
-               .add_basement()
-               .add_roof()
-               .build())
-```
+3. **Increased Complexity for Simple Scenarios**:
+   - If the scenario does not genuinely benefit from the additional structure provided by the Builder Pattern, applying it might complicate the design unnecessarily. For simple constructs, it is often better to use simpler design patterns.
 
 ### Conclusion
 
