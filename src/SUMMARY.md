@@ -117,4 +117,6 @@
     - [Builder Pattern](./chapters/design_patterns/creational/builder_pattern.md))
       - [Builder Pattern Example](./chapters/design_patterns/creational/builder_pattern_example.md)
 - [Structural Patterns](./chapters/design_patterns/structural.md)
+    - [Adapter Pattern](./chapters/design_patterns/structural/adapter_pattern.md))
+      - [Adapter Pattern Example](./chapters/design_patterns/structural/adapter_pattern_example.md)
 - [Behavioral Patterns](./chapters/design_patterns/behavioral.md)
