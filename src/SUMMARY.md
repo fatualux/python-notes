@@ -120,3 +120,9 @@
     - [Adapter Pattern](./chapters/design_patterns/structural/adapter_pattern.md)
       - [Adapter Pattern Example](./chapters/design_patterns/structural/adapter_pattern_example.md)
 - [Behavioral Patterns](./chapters/design_patterns/behavioral.md)
+    - [Observer Pattern](./chapters/design_patterns/behavioral/observer_pattern.md)
+      - [Observer Pattern Example](./chapters/design_patterns/behavioral/observer_pattern_example.md)
+    - [Strategy Pattern](./chapters/design_patterns/behavioral/strategy_pattern.md)
+      - [Strategy Pattern Example](./chapters/design_patterns/behavioral/strategy_pattern_example.md)
+
+
